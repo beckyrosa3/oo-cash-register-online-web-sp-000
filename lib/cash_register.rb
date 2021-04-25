@@ -23,7 +23,7 @@ class CashRegister
 
   def items
     @title.map {|item|}
-    item
+    puts item
 
   end
 end
