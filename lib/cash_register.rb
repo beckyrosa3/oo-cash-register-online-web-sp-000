@@ -22,7 +22,7 @@ class CashRegister
     end
 
   def items
-    self.map do |item|
+    @title
 
     end
   end
