@@ -1,10 +1,10 @@
 class CashRegister
 
-  attr_accessor :total, :discount, :items, :title
+  attr_accessor :total, :discount, :items
 
   def initialize(discount=20)
     @total = 0
-    @discount = discount
+    @items = [] << title
   end
 
   def add_item(title, price, quantity=1)
@@ -22,7 +22,7 @@ class CashRegister
     end
 
   def items
-    @title.map do |item_array|
+    @items.map do |item_array|
     item_array
     end
   end
