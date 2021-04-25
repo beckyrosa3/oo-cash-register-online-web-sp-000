@@ -20,8 +20,9 @@ class CashRegister
       end
     end
 
-  def items(title)
-    self.items = [] << title
+  def items
+    self.items = [] << add_item(title, price, quantity=1)
+    
 
   end
 end
