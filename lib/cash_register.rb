@@ -17,6 +17,6 @@ class CashRegister
     if @discount == 0
       "There is no discount to apply."
     end
-      
+
   end
 end
