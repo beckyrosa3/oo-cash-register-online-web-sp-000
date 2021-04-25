@@ -4,14 +4,17 @@ class CashRegister
 
   def initialize(discount=20)
     @total = 0
-    @items = [] << title
+    @discount = discount
   end
 
   def add_item(title, price, quantity=1)
-    self.total += price * quantity
-    @items = [] << title
+    quantity.times do
+    @items << title
+    @items = []
   end
-
+  @total += price * quantity
+end
+end
   def apply_discount
     if @total > 0
         @total = @total - @total * @discount/100
@@ -20,10 +23,4 @@ class CashRegister
           "There is no discount to apply."
       end
     end
-
-  def items
-    @items.map do |item_array|
-    item_array
-    end
-  end
 end
