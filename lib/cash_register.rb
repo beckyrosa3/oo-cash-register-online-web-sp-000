@@ -22,8 +22,9 @@ class CashRegister
     end
 
   def items
-    @title.map {|item|}
-    puts item
+    @title.map {|i|}
+    i
+
 
   end
 end
