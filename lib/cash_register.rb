@@ -9,7 +9,7 @@ class CashRegister
 
   def add_item(title, price, quantity=1)
     self.total += price * quantity
-    @title = [] 
+    @title = [] << @title
   end
 
   def apply_discount
@@ -23,7 +23,6 @@ class CashRegister
 
   def items
     @title.map {|item|}
-    @title
 
 
   end
