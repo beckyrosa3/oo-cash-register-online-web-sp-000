@@ -12,11 +12,6 @@ class CashRegister
   end
 
   def apply_discount
-    if @discount == 0
-        puts "There is no discount to apply."
-    elsif
-      @total -= discount
-      puts "After the discount, the total comes to $#{@total}"
-    end
+    @total = @total - @total * @discount/100
   end
 end
