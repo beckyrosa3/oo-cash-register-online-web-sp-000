@@ -21,8 +21,8 @@ class CashRegister
     end
 
   def items
-    @add_item.each do 
+    @add_item.each do |item|
 
-
+    end
   end
 end
