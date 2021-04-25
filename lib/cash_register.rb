@@ -22,6 +22,7 @@ class CashRegister
     end
 
   def items
+    @title.map {|item|}
     @title
 
 
