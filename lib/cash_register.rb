@@ -21,7 +21,7 @@ class CashRegister
     end
 
   def items
-    self.items = [] << self
+    self.items = [] << add_item
 
   end
 end
