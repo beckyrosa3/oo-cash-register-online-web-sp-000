@@ -20,7 +20,7 @@ class CashRegister
       end
     end
 
-  def items
+  def items(title)
     self.items = [] << title
 
   end
