@@ -21,7 +21,7 @@ class CashRegister
     end
 
   def items
-    self.items = [] << add_item(title, price, quantity=1)
+    @add_item.each do 
     
 
   end
