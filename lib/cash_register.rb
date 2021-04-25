@@ -22,9 +22,8 @@ class CashRegister
     end
 
   def items
-    @title.map {|i|}
-    i
-
-
+    @title.map do |item_array|
+    item_array
+    end
   end
 end
