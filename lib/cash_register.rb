@@ -22,7 +22,7 @@ class CashRegister
 
   def items
     @add_item.each do 
-    
+
 
   end
 end
