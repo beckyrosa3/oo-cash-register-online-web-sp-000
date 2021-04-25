@@ -21,7 +21,7 @@ class CashRegister
     end
 
   def items
-    @add_item.map do |item|
+    self.map do |item|
 
     end
   end
